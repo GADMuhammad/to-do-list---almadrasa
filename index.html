@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Josefin Sans FONT: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/1.scss" />
+  </head>
+  <body>
+    <div class="attribution">
+      <div class="titleAndTheme">
+        <h1 class="titleAndTheme__title">TODO</h1>
+        <img class="titleAndTheme__theme light-theme" src="images/icon-moon.svg" alt="" />
+        <img class="titleAndTheme__theme dark-theme" src="images/icon-sun.svg" alt="" />
+      </div>
+      <!-- here: -->
+      <div class="inputSquare inputSquare1 toCheckWith">
+        <div class="inputSquare__check inputSquare__check--clicked">
+          <img
+            class="inputSquare__check--img"
+            src="images/icon-check.svg"
+            alt="click to remove task"
+          />
+        </div>
+        <!-- <ion-icon class="inputSquare__check" name="ellipse-outline">
+          <img
+            class="inputSquare__check--img"
+            src="images/icon-check.svg"
+            alt="click to remove task"
+          />
+        </ion-icon> -->
+        <input
+          class="inputSquare__input"
+          type="text"
+          placeholder="What do you have planned to do?"
+        />
+      </div>
+
+      <div class="TasksSquare">
+        <div class="tasks">
+          <h3 class="TasksSquare__task--title no-tasks">No tasks yet...</h3>
+          <!-- <h3 class="TasksSquare__task--title no-tasks forHide completed">
+            No Completed tasks yet...
+          </h3>
+          <h3 class="TasksSquare__task--title no-tasks forHide active">
+            No Active tasks yet...
+          </h3> -->
+          <!-- 1: here: -->
+          <!-- <div class="TasksSquare__task toCheckWith TasksSquare__checked">
+            <div class="inputSquare">
+              <div class="inputSquare__check inputSquare__check--clicked">
+                <img
+                  class="inputSquare__check--img"
+                  src="images/icon-check.svg"
+                  alt="click to remove task"
+                />
+              </div>
+              <h2 class="TasksSquare__task--title TasksSquare__task--title1">
+                Going to the Gym.
+              </h2>
+            </div>
+            <img
+              src="images/icon-cross.svg"
+              alt=""
+              srcset=""
+              class="TasksSquare__task--remove"
+            />
+          </div> -->
+
+          <!-- 2 -->
+          <!-- <div class="TasksSquare__task toCheckWith">
+            <div class="inputSquare">
+              <div class="inputSquare__check inputSquare__check--clicked">
+                <img
+                  class="inputSquare__check--img"
+                  src="images/icon-check.svg"
+                  alt="click to remove task"
+                />
+              </div>
+              <h2 class="TasksSquare__task--title TasksSquare__task--title1">
+                Study lecture of OOP.
+              </h2>
+            </div>
+            <img
+              src="images/icon-cross.svg"
+              alt=""
+              srcset=""
+              class="TasksSquare__task--remove"
+            />
+          </div> -->
+
+          <!-- 3 -->
+          <!-- <div class="TasksSquare__task toCheckWith TasksSquare__checked">
+            <div class="inputSquare">
+              <div class="inputSquare__check inputSquare__check--clicked">
+                <img
+                  class="inputSquare__check--img"
+                  src="images/icon-check.svg"
+                  alt="click to remove task"
+                />
+              </div>
+              <h2 class="TasksSquare__task--title TasksSquare__task--title1">
+                Play football match.
+              </h2>
+            </div>
+            <img
+              src="images/icon-cross.svg"
+              alt=""
+              srcset=""
+              class="TasksSquare__task--remove"
+            />
+          </div> -->
+        </div>
+
+        <!-- After End of all tasks: -->
+        <div class="navigation navigation-border">
+          <h6 class="navigation__itemsLeft">
+            <span class="number-of-tasks">0</span> items left.
+          </h6>
+          <div class="navigation__mainButtons">
+            <button
+              type="button"
+              class="navigation__mainButtons--button navigation__mainButtons--button-all"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="navigation__mainButtons--button navigation__mainButtons--button-active"
+            >
+              Active
+            </button>
+            <button
+              type="button"
+              class="navigation__mainButtons--button navigation__mainButtons--button-completed"
+            >
+              Completed
+            </button>
+          </div>
+          <button type="button" class="navigation__clearButton">Clear Completed</button>
+        </div>
+      </div>
+      <!-- <div class="navigation__mainButtons2">
+        <button
+          type="button"
+          class="navigation__mainButtons--button navigation__mainButtons--button-all"
+        >
+          All
+        </button>
+        <button
+          type="button"
+          class="navigation__mainButtons--button navigation__mainButtons--button-active"
+        >
+          Active
+        </button>
+        <button
+          type="button"
+          class="navigation__mainButtons--button navigation__mainButtons--button-completed"
+        >
+          Completed
+        </button>
+      </div> -->
+
+      <h3 class="design">
+        Developed By <a href="https://t.me/mohgad" target="_blank">Muhammad GAD</a>
+      </h3>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+      <script src="main.js" type="module"></script>
+    </div>
+  </body>
+</html>
