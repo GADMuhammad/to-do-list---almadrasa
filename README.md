@@ -1,6 +1,6 @@
 # Todo App
 
-![Todo App Screenshot](screenshot.png)
+![Todo App Screenshot](images/1708783007527.jpeg)
 
 ## Overview
 
