@@ -16,9 +16,9 @@ This Todo App is a task management web application designed to streamline your d
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (with Flexbox and Grid)
-- JavaScript (Vanilla)
+- React
+- TailwindCSS
+- framer-motion
 
 ## Contact
 For any inquiries or feedback, please contact me at telegram using this username: @mohgad
